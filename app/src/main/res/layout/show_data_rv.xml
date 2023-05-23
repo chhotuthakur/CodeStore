@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:layout_width="match_parent"
@@ -12,16 +12,12 @@
         android:padding="10dp"/>
 
 
-    <TextView
+    <EditText
         android:id="@+id/codexml"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@android:color/holo_blue_dark"
-        android:dropDownWidth="@dimen/dimen150dp"
-        android:dropDownHorizontalOffset="0dp"
-        android:textColor="#FFC107"
-        android:dropDownSelector="@android:color/holo_blue_dark"
-        android:gravity="top|start"
+        android:hint="Xml Code"
+        android:gravity="start"
         android:layout_below="@id/text_layout_title"/>
 
     <TextView
@@ -33,16 +29,12 @@
         android:padding="10dp"
         android:layout_below="@id/codexml"/>
 
-    <TextView
+    <EditText
         android:id="@+id/codejava"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@android:color/holo_blue_dark"
-        android:dropDownWidth="@dimen/dimen150dp"
-        android:dropDownHorizontalOffset="0dp"
-        android:dropDownSelector="@android:color/holo_blue_dark"
-        android:gravity="top|start"
-        android:textColor="#FFC107"
+        android:hint="Java Code"
+        android:gravity="start"
         android:layout_below="@id/text_java_title"/>
 
 </RelativeLayout>
