@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         recy = findViewById(R.id.code_holder);
 
         // To display the Recycler view linearly
+        LinearLayoutManager layoutManager
+                = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
-        recy.setLayoutManager(
-
-                new LinearLayoutManager(this));
+        recy.setLayoutManager(layoutManager);
 
         FirebaseRecyclerOptions<CodeModel> options
 
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // Connecting Adapter class with the Recycler view*/
 
         recy.setAdapter(cadtr);
+        cadtr.startListening();
     }
 
     @Override protected void onStart()
