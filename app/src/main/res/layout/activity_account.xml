@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-        tools:context=".LoginPageFrgmt"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="@android:color/transparent">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AccountActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
 
      <EditText
             android:id="@+id/Email"

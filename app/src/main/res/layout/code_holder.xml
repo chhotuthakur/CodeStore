@@ -3,47 +3,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_layout_title"
-        android:text="activity_main.xml :"
-        android:textSize="20sp"
-        android:padding="10dp"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/text_layout_title"-->
+<!--        android:text="activity_main.xml :"-->
+<!--        android:textSize="20sp"-->
+<!--        android:padding="10dp"/>-->
 
 
-    <com.amrdeveloper.codeview.CodeView
-        android:id="@+id/codexml"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@android:color/holo_blue_dark"
-        android:dropDownWidth="@dimen/dimen150dp"
-        android:dropDownHorizontalOffset="0dp"
-        android:textColor="#FFC107"
-        android:dropDownSelector="@android:color/holo_blue_dark"
-        android:gravity="top|start"
-        android:layout_below="@id/text_layout_title"/>
+<!--    <com.amrdeveloper.codeview.CodeView-->
+<!--        android:id="@+id/codexml"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:background="@android:color/holo_blue_dark"-->
+<!--        android:dropDownWidth="@dimen/dimen150dp"-->
+<!--        android:dropDownHorizontalOffset="0dp"-->
+<!--        android:textColor="#FFC107"-->
+<!--        android:dropDownSelector="@android:color/holo_blue_dark"-->
+<!--        android:gravity="top|start"-->
+<!--        android:layout_below="@id/text_layout_title"/>-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_java_title"
-        android:text="MainActivity.java :"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:layout_below="@id/codexml"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/text_java_title"-->
+<!--        android:text="MainActivity.java :"-->
+<!--        android:textSize="20sp"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_below="@id/codexml"/>-->
 
-    <com.amrdeveloper.codeview.CodeView
-        android:id="@+id/codejava"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@android:color/holo_blue_dark"
-        android:dropDownWidth="@dimen/dimen150dp"
-        android:dropDownHorizontalOffset="0dp"
-        android:dropDownSelector="@android:color/holo_blue_dark"
-        android:gravity="top|start"
-        android:textColor="#FFC107"
-        android:layout_below="@id/text_java_title"/>
+<!--    <com.amrdeveloper.codeview.CodeView-->
+<!--        android:id="@+id/codejava"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:background="@android:color/holo_blue_dark"-->
+<!--        android:dropDownWidth="@dimen/dimen150dp"-->
+<!--        android:dropDownHorizontalOffset="0dp"-->
+<!--        android:dropDownSelector="@android:color/holo_blue_dark"-->
+<!--        android:gravity="top|start"-->
+<!--        android:textColor="#FFC107"-->
+<!--        android:layout_below="@id/text_java_title"/>-->
 
 
 </RelativeLayout>
