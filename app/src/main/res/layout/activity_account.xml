@@ -1,50 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".AccountActivity"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@android:color/transparent">
+    android:padding="16dp"
+    android:background="@drawable/codes">
 
-     <EditText
-            android:id="@+id/Email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:hint="email"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"/>
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/code_headache"
+        android:scaleType="centerCrop"/>
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"/>
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="@color/white"/>
 
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dp"
-            android:backgroundTint="#FF9800"
-            android:text="LOGIN"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:text="Login" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewForgotPassword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/buttonLogin"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Forgot Password?" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewRegister"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textViewForgotPassword"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="New User? Register here!" />-->
+
+</RelativeLayout>
 
 
 
-</LinearLayout>
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:context=".AccountActivity"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center"-->
+<!--    android:background="@android:color/transparent">-->
+
+<!--     <EditText-->
+<!--            android:id="@+id/Email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="200dp"-->
+<!--            android:hint="email"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="25sp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:gravity="center"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="password"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="25sp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:gravity="center"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/submit"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="250dp"-->
+<!--            android:backgroundTint="#FF9800"-->
+<!--            android:text="LOGIN"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="32sp"-->
+<!--            android:textAlignment="center"/>-->
+
+
+
+<!--</LinearLayout>-->

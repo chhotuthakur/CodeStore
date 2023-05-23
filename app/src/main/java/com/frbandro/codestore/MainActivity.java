@@ -22,54 +22,20 @@ public class MainActivity extends AppCompatActivity {
         connect=FirebaseDatabase.getInstance().getReference();
 
         recy = findViewById(R.id.code_holder);
+        recy.setLayoutManager(new LinearLayoutManager(this));
 
-        // To display the Recycler view linearly
-        LinearLayoutManager layoutManager
-                = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
-        recy.setLayoutManager(layoutManager);
 
-        FirebaseRecyclerOptions<CodeModel> options
+        FirebaseRecyclerOptions<CodeModel> products =
+                new FirebaseRecyclerOptions.Builder<CodeModel>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("codestore"), CodeModel.class)
+                        .build();
 
-                = new FirebaseRecyclerOptions.Builder<CodeModel>()
 
-                .setQuery(connect,CodeModel.class).build();
-
-        // Connecting object of required Adapter class to
-
-        // the Adapter class itself
-
-        cadtr = new CodeAdapter(options);
-
-        // Connecting Adapter class with the Recycler view*/
-
+        cadtr = new CodeAdapter(products);
         recy.setAdapter(cadtr);
         cadtr.startListening();
-    }
 
-    @Override protected void onStart()
-
-    {
-
-        super.onStart();
-
-        cadtr.startListening();
-
-    }
-
-
-
-    // Function to tell the app to stop getting
-
-    // data from database on stopping of the activity
-
-    @Override protected void onStop()
-
-    {
-
-        super.onStop();
-
-        cadtr.stopListening();
 
     }
 }
